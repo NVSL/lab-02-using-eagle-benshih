@@ -1913,7 +1913,7 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BUTTON-TACTILE" prefix="S">
+<deviceset name="BUTTON-TACTILE" prefix="S" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TS2" x="0" y="0"/>
 </gates>
@@ -1924,6 +1924,17 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="P1" pad="P2"/>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="S1" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMD" package="BUTTON-TACTILE-SQUARE_SMD">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="P1" pad="P$2"/>
+<connect gate="G$1" pin="S" pad="P$3"/>
+<connect gate="G$1" pin="S1" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
